@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica CSS: Tarjeta de Presentación</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>🎨 Práctica CSS: Tarjeta de Presentación</h1>
+            <p class="subtitle">Aprende a crear una tarjeta de presentación profesional con CSS</p>
+        </div>
+    </header>
+
+    <main class="container main-content">
+        <!-- Sección de Teoría -->
+        <section class="theory-section">
+            <h2>📚 Conceptos CSS que Aprenderás</h2>
+            <div class="concepts-grid">
+                <div class="concept-card">
+                    <h3>🎯 Selectores</h3>
+                    <p>Por clase (.tarjeta) y por etiqueta (h1, p)</p>
+                </div>
+                <div class="concept-card">
+                    <h3>📦 Modelo de Caja</h3>
+                    <p>Margin, padding, border, content</p>
+                </div>
+                <div class="concept-card">
+                    <h3>🎨 Colores</h3>
+                    <p>Hexadecimales, RGB, palabras clave</p>
+                </div>
+                <div class="concept-card">
+                    <h3>🔤 Fuentes</h3>
+                    <p>Font-family, tamaño, alineación</p>
+                </div>
+                <div class="concept-card">
+                    <h3>⚡ Display Flex</h3>
+                    <p>Para centrado y layout responsive</p>
+                </div>
+                <div class="concept-card">
+                    <h3>🔵 Border-radius</h3>
+                    <p>Esquinas redondeadas</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Práctica -->
+        <section class="practice-section">
+            <h2>🛠️ Pasos de la Práctica</h2>
+            
+            <div class="steps-container">
+                <!-- Paso 1 -->
+                <div class="step">
+                    <div class="step-header">
+                        <span class="step-number">1</span>
+                        <h3>Estructura HTML</h3>
+                    </div>
+                    <div class="step-content">
+                        <p>Crea la estructura semántica de la tarjeta:</p>
+                        <pre><code>&lt;div class="tarjeta"&gt;
+    &lt;h1 class="nombre"&gt;Tu Nombre&lt;/h1&gt;
+    &lt;h2 class="titulo"&gt;Tu Profesión&lt;/h2&gt;
+    &lt;p class="descripcion"&gt;Descripción personal...&lt;/p&gt;
+    &lt;div class="contacto"&gt;
+        &lt;p&gt;📧 tu.email@ejemplo.com&lt;/p&gt;
+        &lt;p&gt;📱 +123 456 7890&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                    </div>
+                </div>
+
+                <!-- Paso 2 -->
+                <div class="step">
+                    <div class="step-header">
+                        <span class="step-number">2</span>
+                        <h3>Estilos del Body</h3>
+                    </div>
+                    <div class="step-content">
+                        <p>Prepara el fondo y centra la tarjeta:</p>
+                        <pre><code>body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}</code></pre>
+                    </div>
+                </div>
+
+                <!-- Paso 3 -->
+                <div class="step">
+                    <div class="step-header">
+                        <span class="step-number">3</span>
+                        <h3>Diseño de la Tarjeta</h3>
+                    </div>
+                    <div class="step-content">
+                        <p>Estilos principales del contenedor:</p>
+                        <pre><code>.tarjeta {
+    background: white;
+    width: 350px;
+    border-radius: 20px;
+    padding: 40px 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+}</code></pre>
+                    </div>
+                </div>
+
+                <!-- Paso 4 -->
+                <div class="step">
+                    <div class="step-header">
+                        <span class="step-number">4</span>
+                        <h3>Estilos del Nombre</h3>
+                    </div>
+                    <div class="step-content">
+                        <p>Destaca el elemento más importante:</p>
+                        <pre><code>.nombre {
+    color: #2c3e50;
+    text-align: center;
+    font-size: 32px;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 15px;
+}</code></pre>
+                    </div>
+                </div>
+
+                <!-- Más pasos... -->
+            </div>
+        </section>
+
+        <!-- Sección de Resultado -->
+        <section class="result-section">
+            <h2>🎯 Resultado Final</h2>
+            <p>Aquí está el resultado de aplicar todos los estilos:</p>
+            
+            <div class="demo-container">
+                <!-- Tarjeta de demostración -->
+                <div class="tarjeta" id="demoCard">
+                    <h1 class="nombre">María González</h1>
+                    <h2 class="titulo">Desarrolladora Frontend</h2>
+                    <p class="descripcion">Apasionada por crear experiencias web increíbles. Especializada en HTML, CSS y JavaScript. Siempre aprendiendo nuevas tecnologías.</p>
+                    <div class="contacto">
+                        <p>📧 maria.gonzalez@email.com</p>
+                        <p>📱 +34 612 345 678</p>
+                        <p>📍 Madrid, España</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="customization-panel">
+                <h3>🎨 Personaliza en Tiempo Real</h3>
+                <div class="controls">
+                    <label>
+                        Color de fondo:
+                        <input type="color" id="bgColor" value="#667eea">
+                    </label>
+                    <label>
+                        Color del nombre:
+                        <input type="color" id="nameColor" value="#2c3e50">
+                    </label>
+                    <label>
+                        Color de acento:
+                        <input type="color" id="accentColor" value="#3498db">
+                    </label>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Código Completo -->
+        <section class="code-section">
+            <h2>📄 Código Completo</h2>
+            <div class="code-tabs">
+                <button class="tab-button active" onclick="openTab('htmlTab')">HTML</button>
+                <button class="tab-button" onclick="openTab('cssTab')">CSS</button>
+            </div>
+            
+            <div id="htmlTab" class="tab-content active">
+                <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Mi Tarjeta de Presentación&lt;/title&gt;
+    &lt;link rel="stylesheet" href="estilos.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class="tarjeta"&gt;
+        &lt;h1 class="nombre"&gt;Tu Nombre&lt;/h1&gt;
+        &lt;h2 class="titulo"&gt;Tu Profesión&lt;/h2&gt;
+        &lt;p class="descripcion"&gt;Tu descripción personal...&lt;/p&gt;
+        &lt;div class="contacto"&gt;
+            &lt;p&gt;📧 tu.email@ejemplo.com&lt;/p&gt;
+            &lt;p&gt;📱 +123 456 7890&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            </div>
+            
+            <div id="cssTab" class="tab-content">
+                <pre><code>/* Estilos completos de la tarjeta */
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.tarjeta {
+    background-color: white;
+    width: 350px;
+    border-radius: 20px;
+    padding: 40px 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.nombre {
+    color: #2c3e50;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 15px;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 15px;
+}
+
+.titulo {
+    color: #7f8c8d;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.descripcion {
+    color: #34495e;
+    text-align: justify;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.contacto {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 12px;
+    border-left: 5px solid #3498db;
+}
+
+.contacto p {
+    margin: 10px 0;
+    color: #2c3e50;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}</code></pre>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>✨ Práctica creada para aprender CSS - Puedes usar este código libremente</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
